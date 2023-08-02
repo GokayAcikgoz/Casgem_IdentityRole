@@ -1,4 +1,4 @@
-﻿@model Casgem_IdentityRole.Models.RoleAddViewModel
+﻿@model Casgem_IdentityRole.Models.UpdateRoleViewModel
 @{
     Layout = null;
 }
@@ -9,9 +9,10 @@
     <br />
     <br />
     <form method="post">
+        <input type="hidden" asp-for="Id"/>
         <label>Rol</label>
-        <input type="text" class="form-control" asp-for="Name"/>
+        <input type="text" class="form-control" asp-for="Name" />
         <br />
-        <button class="btn btn-primary">Rolü Oluştur</button>
+        <button class="btn btn-primary">Rolü Güncelle</button>
     </form>
 </div>
